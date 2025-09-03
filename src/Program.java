@@ -19,7 +19,7 @@ public class Program {
 
         // Verificar se o dígito verificador 1 é válido
 
-        String cpfEntrada = "13479771474";
+        String cpfEntrada = "";
 
         //Aqui estou removendotodo caractere que não seja um número através de um regex
         cpfEntrada = cpfEntrada.replaceAll("[^0-9]", "");
@@ -83,6 +83,11 @@ public class Program {
             }
 
         }
+
+        NumerosTriangulares numerosTriangulares = new NumerosTriangulares();
+
+        numerosTriangulares.numero = 5;
+        numerosTriangulares.printarTriangulo();
 
 
     }

@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 /*Esse código faz muitas coisas ao mesmo tempo e vou utilizá-lo para treinar os fundamentos até ficar inviável;
 * Abaixo vou anotar informações relevantes e o que eu fiz até agora:
@@ -21,16 +21,12 @@ public class Program {
 
         pessoa.dizerOla();
 
-        Scanner scan = new Scanner(System.in); // cria objeto para ler entrada
 
         NumerosTriangulares numerosTriangulares = new NumerosTriangulares();
 
-        System.out.println("Digite um número para mostrar o triangular: ");
-        numerosTriangulares.numero = scan.nextInt();
-        numerosTriangulares.printarTriangulo();
+        numerosTriangulares.mostrarTriangulo();
 
         ValidadorCPF validadorCPF = new ValidadorCPF();
-
         validadorCPF.executarValidacaoInterativa();
 
     }
